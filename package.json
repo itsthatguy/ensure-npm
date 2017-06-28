@@ -1,0 +1,17 @@
+{
+  "name": "ensure-npm",
+  "version": "0.0.1",
+  "description": "Ensures that your application is using a specific version on npm",
+  "author": "Kevin Altman <kevin@itsthatguy.com>",
+  "repository": "git@github.com:itsthatguy/ensure-npm.git",
+  "bin": {
+    "ensure-npm": "./bin/ensure-npm"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "semver": "^5.3.0"
+  }
+}
