@@ -14,6 +14,6 @@ $ ensure-npm '>= 4.3.0'
 ```
 # package.json
 "scripts": {
-  "preinstall": "ensure-npm: '>=5.0.4'"
+  "preinstall": "ensure-npm '>=5.0.4'"
 }
 ```
