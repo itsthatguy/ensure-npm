@@ -1,6 +1,6 @@
 {
   "name": "ensure-npm",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Ensures that your application is using a specific version on npm",
   "author": "Kevin Altman <kevin@itsthatguy.com>",
   "repository": "git@github.com:itsthatguy/ensure-npm.git",
