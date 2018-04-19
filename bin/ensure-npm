@@ -8,13 +8,14 @@ const npmVersion = spawnSync('npm', ['--version'],
 ).output[1].toString();
 
 const comparedVersion = process.argv.slice(2)[0];
+const rawVersion = comparedVersion.replace(/[^\d\.]*/, '');
 
 let comparator = semver.gte;
 if (/^[\^~><=]/.test(comparedVersion)) comparator = semver.satisfies;
 if (comparator(npmVersion, comparedVersion)) {
   process.exit();
 } else {
-  console.error('Error: This application requires npm v5.0.4 or greater.')
+  console.error(`Error: This application requires npm to be v${rawVersion} or greater`)
   console.error('Please update npm with `npm install npm@latest -g`\n')
   process.exit(1);
 }
